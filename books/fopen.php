@@ -7,7 +7,8 @@ if (!$fp) {
     exit;
 }
 while ($row = fgetcsv($fp)) {
-    echo $row[0]."<br>";
+    echo
+        htmlspecialchars($row[0])."<br>";
     echo $row[4]."<br><br>";
 }
 
