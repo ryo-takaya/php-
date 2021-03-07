@@ -1,4 +1,5 @@
 <?php
+require_once '../functions.php';
 
 //データを読み込む
 $fp = fopen('bookdata.csv','r');
@@ -7,8 +8,7 @@ if (!$fp) {
     exit;
 }
 while ($row = fgetcsv($fp)) {
-    echo
-        htmlspecialchars($row[0])."<br>";
+    echo escapeHtml($row[0])."<br>";
     echo $row[4]."<br><br>";
 }
 
