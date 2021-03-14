@@ -35,13 +35,13 @@ try{
     <input type="hidden" name="id" value=<?= $row['id'] ?>>
 <p>
     <label for="title">タイトル</label>
-    <input type="text" id="title" value=<?= $row['title']?>>
+    <input type="text" id="title" name="title" value=<?= $row['title']?>>
 </p><p>
     <label for="author">作者名</label>
-    <input type="text" id="author" value=<?= $row['author']?>>
+    <input type="text" id="author" name="author" value=<?= $row['author']?>>
 </p><p>
     <label for="price">値段</label>
-    <input type="text" id="price" value=<?= $row['price']?>>
+    <input type="text" id="price" name="price" value=<?= $row['price']?>>
 </p>
     <p>
         <input type="submit" value="送信">
