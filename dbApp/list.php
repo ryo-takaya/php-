@@ -1,6 +1,6 @@
 <?php
 require_once '../functions.php';
-
+ var_dump(password_hash('dmadmadmadmaD1',PASSWORD_DEFAULT));
 try {
 $dbh = dbOpen();
 $sql = 'select * from books';
